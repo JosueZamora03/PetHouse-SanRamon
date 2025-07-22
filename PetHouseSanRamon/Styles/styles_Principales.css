@@ -1,0 +1,175 @@
+/* Josué Zamora Zuñiga 15/07/2025 */
+/* styles.css Principales Nav y Footer y demas..... */
+
+/* Estilos basicos de las diferentes paginas */
+:root {
+  --color-principal: #3BA3A2;
+  --color-acento: #E87C55;
+  --color-fondo: #FFFFFF;
+  --color-texto: #3D3D3D;
+  --fuente-principal: 'Poppins', sans-serif;
+  --fuente-titulos: 'Baloo';
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header y Nav de las paginas */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-bottom: .2rem;
+    padding-top: 0.6rem;
+    background-color: var(--color-fondo);
+}
+
+.logo {
+    max-width: 5rem ;
+    margin-left: 1rem;
+}
+
+.nav_list {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav_list li a {
+    text-decoration: none;
+    color: var(--color-acento);
+    font-family: var(--fuente-principal)
+}
+
+.nav_list li a:hover {
+    color: #3D3D3D;
+    transition: 0.7s;
+}
+
+.nav{
+    padding-right: 1.5rem;
+}
+
+/* Estilo base para dropdown */
+.menu {
+  display: none;
+  position: absolute;
+  background-color: var(--color-fondo);
+  list-style: none;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  top: 100%;
+  min-width: 17rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.dropdown:hover .menu {
+  display: block;
+  transition: 0.8s;
+}
+
+/* Ítems dentro del dropdown */
+.menu li a {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  color: var(--color-acento);
+  text-decoration: none;
+  font-family: var(--fuente-principal);
+}
+
+.menu li a:hover {
+  color: var(--color-texto);
+  transition: 0.8s;
+}
+
+.btn_abrir,
+.btn_cerrar { 
+    display: none;
+    max-width: 3rem;
+    max-height: 3rem;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* Partes del Footer */
+.redes_footer{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+.copy{ 
+    margin-right: 2.5rem;
+}
+
+
+/* Responsive del Móvil */
+@media (max-width: 768px) {
+
+    /* Sección de los botones del nav */
+    .btn_abrir,
+    .btn_cerrar {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+        max-width: 5rem;
+    }
+
+    .btn_abrir,
+    .btn_cerrar:hover {
+        max-width: 5.4rem;
+    }
+
+    /* Navbar ajustado */
+    .nav { 
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        z-index: 1000;
+        align-items: baseline;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 2rem;
+        background-color: var(--color-fondo);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav img {
+        padding-left: 2rem;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        align-items: baseline;
+        margin: 0.8rem;
+        margin-right: 5rem;
+        margin-top: 3rem;
+        font-size: 20px;
+        gap: 1rem;
+    }
+
+    .nav_list li a {
+        color: var(--color-acento);
+    }
+    
+    .nav_list li a:hover {
+        color: #3D3D3D;
+    }
+}

@@ -1,0 +1,139 @@
+/* Josué Zamora Zuñiga 15/07/2025 */
+/* Estilos de Nosotros */
+
+:root {
+  --color-principal: #3BA3A2;
+  --color-acento: #E87C55;
+  --color-fondo: #FFFFFF;
+  --color-texto: #3D3D3D;
+  --fuente-principal: 'Poppins', sans-serif;
+  --fuente-titulos: 'Baloo';
+}
+
+/* Img Principal de la pagina, Junto con el Main */
+.img_fondo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Baloo';
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5rem;
+  overflow: hidden;
+}
+
+/* Contenedor de la IMG */
+.contenedor_imagen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estetica general de la Imagen */
+.imagenNosotros {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Titulo del Inicio */
+.titulo {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.nosotros {
+  padding: 3rem 2rem;
+}
+
+.nosotros_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nosotros_contenido {
+  background-color: var(--color-acento);
+  color: #fff;
+  padding: 3rem;
+  border-radius: 0px 50px 50px 50px;
+  flex: 1 1 500px;
+  font-size: 1.2rem;
+}
+
+.nosotros_titulo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: var(--fuente-titulos);
+}
+
+.nosotros_texto {
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  font-family: var(--fuente-principal);
+}
+
+.nosotros_side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 300px;
+}
+
+.nosotros_image { 
+  width: 90%;
+  height: auto;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+
+.nosotros_cuadro_inferior {
+  background-color: var(--color-principal);
+  color: #fff;
+  padding: 1.5rem;
+  padding-bottom: 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* ✅ Estilos responsivos para móviles y tablets */
+@media (max-width: 768px) {
+
+  /* Imagen de fondo */
+  .img_fondo {
+    height: 60vh; /* Altura de la imagen  */
+    padding: 10rem 0 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenedor_imagen {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .imagenNosotros {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+}

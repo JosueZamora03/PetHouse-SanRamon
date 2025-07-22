@@ -1,0 +1,118 @@
+/* Josué Zamora Zuñiga 15/07/2025 */
+
+/* Variables globales */
+:root {
+  --color-principal: #3BA3A2;
+  --color-acento: #E87C55;
+  --color-fondo: #FFFFFF;
+  --color-texto: #3D3D3D;
+  --fuente-principal: 'Poppins', sans-serif;
+  --fuente-titulos: 'Baloo';
+}
+
+/* Estructura principal */
+.contenido {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Clase para separar en columnas */
+.columna {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Contenedores */
+
+.contenedor_requisitos,
+.contenedor_visita {
+  background-color: var(--color-acento);
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  color: var(--color-fondo);
+  font-family: var(--fuente-principal);
+  line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.contenedor_transporte {
+  background-color: var(--color-principal);
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  color: var(--color-fondo);
+  font-family: var(--fuente-principal);
+  line-height: 1.8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+/* Títulos */
+.titulos {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: var(--fuente-titulos);
+}
+
+/* Contenedor de imagen independiente */
+.contenedor_imagen {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: var(--color-fondo);
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Imagenes del main */
+.img_transporte {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.img_trans {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .columna {
+    width: 100%;
+  }
+
+  .img_titulo {
+    font-size: 1.1rem;
+  }
+
+  .tarjeta,
+  .contenedor_requisitos,
+  .contenedor_transporte,
+  .contenedor_visita {
+    padding: 1.2rem;
+  }
+
+  .img_transporte {
+    max-width: 100%;
+  }
+}

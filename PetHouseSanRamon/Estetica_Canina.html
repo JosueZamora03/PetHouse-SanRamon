@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetHouse San Ramon - Estetica Canina</title>
+ 
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="Styles/styles_Estetica.css">
+  <link rel="stylesheet" href="Styles/styles_Principales.css">
+
+  <!-- Link de Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+   rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+   crossorigin="anonymous">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo&family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+    
+    <header class="header">
+    <!-- Logo -->
+    <img src="Imagenes_Iconos/Servicios/Fondo_Parallax.webp" alt="Logo PetHouse" class="logo" />
+    
+    <!-- Botón hamburguesa -->
+    <img class="btn_abrir" id="abrir" src="Imagenes_Iconos/svg/menu.png"></img>
+
+    <!-- Menú de navegación -->
+    <nav class="nav" id="nav">
+      <img class="btn_cerrar" id="cerrar" src="Imagenes_Iconos/svg/cerrar.png"></img>
+      <ul class="nav_list">
+        <li><a href="#">Inicio</a></li>
+        <li class="nav-li dropdown">
+          <a href="#">Servicios</a>
+          <ul class="menu">
+            <li><a href="Hotel_Guarderia.html">Hotel y Guardería</a></li>
+            <li><a href="Transporte_Requisitos.html">Transporte y Requisitos</a></li>
+            <li><a href="Estetica_Canina.html">Estética Canina</a></li>
+          </ul>
+        </li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  
+</header>
+
+  <main class="estetica">
+    
+    <section class="img_fondo"> <!-- Imagen de fondo -->
+      <div class="fondo_imagen-contenedor">
+        <img src="Imagenes_Iconos/Servicios/EsteticaFon.webp" alt="Imagen de fondo en Nosotros" class="imagenEstetica">
+      </div>
+      <h1 class="titulo">Estetica Canina</h1>
+    </section>
+
+  <section class="estetica_contenido">
+
+    <!-- Texto del contenedor -->
+    <div class="seccion_principal">
+      <div class="estetica_actividad">
+        <h2 class="estetica_titulo">Actividad</h2>
+        <p class="estetica_texto">
+          Nuestros productos son 100% para mascotas y naturales, usamos aromaterapia, música clásica 
+          tranquilizadora y agua caliente para que durante el baño, se pueda garantizar una relajación
+          extensa y que el estrés sea el mínimo.
+        </p>
+        <p class="estetica_texto">
+          (Los precios van desde los <strong>₡7000 colones</strong> y varían según tamaño, manto o nudos.)
+        </p>
+      </div>
+
+      <div class="estetica_galeria">
+        <img src="/Imagenes_Iconos/Servicios/Estetica_Canina.webp" alt="Perro en peluquería" class="estetica_img" />
+      </div>
+    </div>
+
+    <!-- Aside de la imagen -->
+    <aside>
+      <div class="img_aside">
+        <img src="Imagenes_Iconos/Servicios/Estetica_aside.webp" alt="Imagen de una mascota">
+      </div>
+    </aside>
+  </section>
+
+  </main>
+
+  <!-- Footer de la pagina -->
+  <footer class="footer text-white py-4" style="background-color: #3BA3A2; font-family: 'Poppins', sans-serif;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <img src="Imagenes_Iconos/Servicios/Fondo_Parallax.webp" alt="Logo PetHouse" class="footer__logo mb-3 mb-md-0" style="max-width: 150px; height: auto;">
+
+    <div class="footer__social text-center mb-3 mb-md-0">
+      <h6 class="text-white mb-3">Redes Sociales</h6>
+        <div class="d-flex gap-4 justify-content-center">
+          <div class="d-flex flex-column align-items-center redes_footer">
+            <a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <small class="text-white">Facebook</small>
+          </div>
+          <div class="d-flex flex-column align-items-center redes_footer">
+            <a href="#" class="text-white fs-4" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <small class="text-white">Instagram</small>
+          </div>
+          <div class="d-flex flex-column align-items-center redes_footer">
+            <a href="#" class="text-white fs-4" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <small class="text-white">WhatsApp</small>
+          </div>
+          <div class="d-flex flex-column align-items-center redes_footer">
+            <a href="#" class="text-white fs-4" aria-label="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+            <small class="text-white">TikTok</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__links d-flex gap-4">
+        <a href="Nosotros.html" class="text-white text-decoration-none">Sobre Nosotros</a>
+        <a href="Contacto.html" class="text-white text-decoration-none">Ayuda</a>
+      </div>
+    </div>
+
+    <div class="text-center mt-3 copy">
+      <p class="mb-0">Copyright ©2025. PetHouse San Ramon</p>
+    </div>
+  </footer>
+
+  <!-- Script de Boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
+   crossorigin="anonymous"></script>
+
+
+   <script src="/main/funciones.js"></script>
+
+</body>
+</html>

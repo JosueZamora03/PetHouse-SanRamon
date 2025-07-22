@@ -1,0 +1,119 @@
+/* Josué Zamora Zuñiga 15/07/2025 */
+/* Estilos de Hotel y Guarderia */
+
+:root {
+  --color-principal: #3BA3A2;
+  --color-acento: #E87C55;
+  --color-fondo: #FFFFFF;
+  --color-texto: #3D3D3D;
+  --fuente-principal: 'Poppins', sans-serif;
+  --fuente-titulos: 'Baloo';
+}
+
+    /* Imagen Principal */
+.img_fondo_hotel h1 {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  color: white;
+  font-family: var(--fuente-titulos);
+  font-size: 2rem;
+}
+    /* Dispocision de la imagen */
+.img_fondo_hotel {
+  position: relative;
+  text-align: right;
+}
+
+.img_fondo_hotel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+    /* Imagen del contenedor principal */
+.img_hotel {
+  width: 35%;
+  height: 330px;  
+  display: flex;
+}
+
+    /* Clase de laimagen */
+.img_perrito {
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #3BA3A2;
+}
+
+    /* Section del contenido Principal*/
+.hotel_contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 1.5rem;
+}
+    /* Contenedor de los diferentes cuadros que componen el main */
+.hotel_actividad {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 40px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  margin-bottom: 1rem;
+  flex: 1 1 300px;
+}
+    /* Estilos de los textos y titulos dentro de main */
+.hotel_titulo {
+  font-size: 1.5rem;
+  font-family: var(--fuente-titulos);
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  color: var(--color-acento);
+}
+
+.hotel_titulo_objetivo {
+  font-size: 1.5rem;
+  font-family: var(--fuente-titulos);
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: var(--color-acento);
+}
+
+.hotel_texto {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-family: var(--fuente-principal);
+}
+
+.hotel_texto3 { /* Ajuste de posicion del ultimo cuadro */
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-family: var(--fuente-principal);
+}
+
+@media (max-width: 768px) {
+  .img_fondo_hotel h1 {
+    font-size: 1.6rem;
+    right: 1rem;
+    bottom: 0.5rem;
+    text-align: right;
+  }
+
+  .hotel_contenido {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 0rem;
+  }
+
+  .img_hotel,
+  .hotel_actividad {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .img_perrito {
+    display: none;
+  }
+}
